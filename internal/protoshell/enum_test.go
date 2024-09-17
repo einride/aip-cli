@@ -45,7 +45,6 @@ func TestCompleteEnum(t *testing.T) {
 			expected:   []string{"DEFAULT"},
 		},
 	} {
-		tt := tt
 		t.Run(tt.name, func(t *testing.T) {
 			actual := CompleteEnumValue(tt.toComplete, tt.enum)
 			assert.DeepEqual(t, tt.expected, actual)

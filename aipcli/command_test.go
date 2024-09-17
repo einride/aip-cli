@@ -22,7 +22,6 @@ func Test_qualifiedServiceUse(t *testing.T) {
 			},
 		},
 	} {
-		tt := tt
 		t.Run(tt.name, func(t *testing.T) {
 			actual := make([]string, 0, len(tt.expected))
 			var i int

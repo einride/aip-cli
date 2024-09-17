@@ -154,6 +154,7 @@ func setPrimitiveFlag(
 			if err != nil {
 				return 0, err
 			}
+			//nolint:gosec // the string can only ever represent a 32-bit integer.
 			return int32(i64), nil
 		}
 		if field.IsList() {
